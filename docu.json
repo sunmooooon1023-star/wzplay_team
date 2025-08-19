@@ -60,7 +60,7 @@
     { "number": 3, "title": "양육권을 위한 살인" },
     { "number": 4, "title": "괴물과의 결혼" }
   ],
-  "Director": [],
+  "Director": ["Cynthia Childs"],
   "Production": "Blumhouse",
   "rating": "15",
   "summary": "소름 끼치는 배신부터 끔찍한 살인 음모까지, 관련자들의 생생한 증언을 통해 사랑의 어두운 이면을 낱낱이 해부한 범죄 실화 다큐시리즈.",
@@ -194,7 +194,7 @@
     {"number": 4, "title": "우리는 여기서 무얼 하는가?"},
     {"number": 5, "title": "길의 끝자락"}
   ],
-  "Director": [],
+  "Director": ["Brian Knappenberger"],
   "Production": "Netflix",
   "rating": "19",
   "summary": "통킹만 사건에서 사이공 함락에 이르기까지, 베트남 전쟁의 참혹한 여파를 하나씩 되짚어 본다. 생각할 거리를 던져주는 다큐멘터리 시리즈.",
