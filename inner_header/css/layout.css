@@ -63,7 +63,7 @@
 }
 .search-box .search-btn{
     display: inline-block;
-    background: url("../source/image/ico/ico_search.png") no-repeat center;
+    background: url("../source/image/ico_search.png") no-repeat center;
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -142,15 +142,15 @@
     filter: invert(10);
 }
 .hover-box-nav ul li:first-child a::before{
-    background: url("./img/ico/ico_account.png");
+    background: url("../source/image/ico_account.png");
     background-size: 24px 24px;
 }
 .hover-box-nav ul li:nth-child(2) a::before{
-    background: url("./img/ico/ico_basket.png");
+    background: url("../source/image/ico_basket.png");
     background-size: 24px 24px;
 }
 .hover-box-nav ul li:last-child a::before{
-    background: url("./img/ico/ico_favorite_list.png");
+    background: url("../source/image/ico_favorite_list.png");
     background-size: 24px 24px;
 }
 .logout{
