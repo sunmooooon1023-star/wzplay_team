@@ -141,10 +141,10 @@
 
 
 
-/* 스와이퍼 */
-.search-container-recommend{
+/* search-container-recommend */
+.search-container-recommend {
     position: relative;
-    
+    height: 600px;
 }
 .search-container-recommend>.swiper.mySwiper>.swiper-wrapper {
     display: flex;
@@ -152,6 +152,68 @@
 
 .search-container-recommend>.swiper.mySwiper>.swiper-wrapper>.swiper-slide>a>img {
     width: 350px;
-    height: 430px;
+    height: 480px;
+    margin-top: 110px;
 }
 
+.search-container-recommend>.swiper.mySwiper> .swiper-top{
+    width: 110%;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px; left: -5%;
+    background: #21252B;
+}
+.search-container-recommend>.swiper.mySwiper> .swiper-bottom{
+    width: 110%;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -50px; left: -5%;
+    background: #21252B;
+}
+
+.search-container-recommend > h3 {
+    position: absolute;
+    left: 150px; top: 0;
+    z-index: 5;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.search-container-recommend > span {
+    font-size: 34px;
+    position: absolute;
+    left: 150px; top: 50px;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+/* search-container-content */
+.search-container-content  {
+    position: relative;
+    height: 600px;
+}
+
+.search-container-content > h3 {
+    position: absolute;
+    left: 150px; top: 100px;
+    z-index: 5;
+    font-size: 34px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.search-container-content > span {
+    font-size: 34px;
+    position: absolute;
+    left: 150px; top: 150px;
+    z-index: 5;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}

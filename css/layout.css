@@ -9,7 +9,6 @@
 
 .main-layout-wrapper{
     width: 100%;
-    height: 200vh;
     background-color: #21252B;
 }
 .main-header-container{
@@ -24,6 +23,7 @@
     padding: 10px 60px;
     color: #fff;
     position: fixed;
+    z-index: 10;
 }
 .logo-box{
     position: absolute;
