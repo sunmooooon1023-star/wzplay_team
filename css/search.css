@@ -144,30 +144,14 @@
 /* 스와이퍼 */
 .search-container-recommend{
     position: relative;
+    
 }
 .search-container-recommend>.swiper.mySwiper>.swiper-wrapper {
     display: flex;
 }
 
-.search-container-recommend>.swiper.mySwiper>.swiper-wrapper>.swiper-slide>img {
+.search-container-recommend>.swiper.mySwiper>.swiper-wrapper>.swiper-slide>a>img {
     width: 350px;
-    height: 450px;
+    height: 430px;
 }
 
-.search-container-recommend>.swiper-box-top {
-    width: 110%;
-    margin: 0 auto;
-    height: 100px;
-    border-radius: 50%;
-    background: #21252B;
-    position: absolute;
-    left: -5%; top: -10px;
-}
-.search-container-recommend>.swiper-box-bottom {
-    width: 110%;
-    height: 100px;
-    border-radius: 50%;
-    background: #21252B;
-    position: absolute;
-    left: -5%; bottom: -40px;
-}

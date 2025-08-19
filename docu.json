@@ -235,24 +235,17 @@
 {
   "id": "docu-13",
   "category": "Documentary",
-  "title": "네팔 지진: 에베레스트의 생존자들",
-  "genre": ["역사", "자연 재해", "다큐멘터리"],
-  "tag": ["지진", "생존", "다큐멘터리"],
-  "episode": 5,
-  "episodeGuide": [
-    {"number": 1, "title": "하필 그떄 그곳에"},
-    {"number": 2, "title": "출구는 없다"},
-    {"number": 3, "title": "탈출"},
-    {"number": 4, "title": "우리는 여기서 무얼 하는가?"},
-    {"number": 5, "title": "길의 끝자락"}
-  ],
-  "Director": ["Olly Lambert"],
+  "title": "개는 왜 개일까?",
+  "genre": ["동물", "다큐멘터리"],
+  "tag": ["동물", "힐링", "다큐멘터리"],
+  "episode": 1,
+  "Director": ["Andy Mitchell"],
   "Production": "Netflix",
-  "rating": "15",
-  "summary": "생존자들의 증언과 사건 당시 영상을 통해 2015년 네팔을 뒤흔든 지진을 들여다본다. 참사의 실상과 그 속에서 피어난 감동을 동시에 전하는 다큐멘터리 시리즈.",
-        "image_default":"./source/image/docu/docu_3_Aftershock_Everest_and_the_Nepal_Earthquake_B.png",
-        "image_poster":"./source/image/docu/docu_3_Aftershock_Everest_and_the_Nepal_Earthquake_P.png",
-        "video":"./source/video/docu/docu_3_Aftershock_Everest_and_the_Nepal_Earthquake_V.mp4"
+  "rating": "ALL",
+  "summary": "인간의 가장 좋은 친구, 반려견. 개에 대한 과학적, 정서적 통찰을 담은 다큐멘터리를 통해 반려견의 세계로 유쾌한 여행을 떠나보자.",
+        "image_default":"./source/image/docu/docu_Inside_the_Mind_of_a_Dog_B.png",
+        "image_poster":"./source/image/docu/docu_Inside_the_Mind_of_a_Dog_P.png",
+        "video":"./source/video/docu/docu_Inside_the_Mind_of_a_Dog_V.mp4"
 },
 {
   "id": "docu-14",
@@ -311,3 +304,6 @@
 }
 
 ]
+
+
+
