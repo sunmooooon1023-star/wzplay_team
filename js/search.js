@@ -36,6 +36,7 @@ document.getElementById('search-button').addEventListener('click', function (e) 
   e.preventDefault();
 
   const WORD = document.getElementById('search-input').value.trim();
+  console.log(WORD);
 
   if (WORD.length === 0) {
     alert("검색어를 입력해주세요");
@@ -96,7 +97,11 @@ function renderResults(filteredItems) {
 
 
 /* home-header-search */
-/* document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('DOMContentLoaded', () => {
+  if(window.location.pathname.includes("/search.html")){
+  return;
+}
   const URL = new URLSearchParams(window.location.search);
   const Query = URL.get('query')?.toLowerCase() || '';
 
@@ -106,7 +111,6 @@ function renderResults(filteredItems) {
     Result.style.display = 'none';
     return;
   }
-  
 
   fetch('./data.json')
     .then(res => res.json())
@@ -121,6 +125,6 @@ function renderResults(filteredItems) {
       console.error('데이터를 불러오는 중 오류 발생:', err);
     });
 
-}); */
+});
 
 
