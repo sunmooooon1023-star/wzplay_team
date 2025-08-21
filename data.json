@@ -591,7 +591,7 @@
         "rating": 15,
         "summary": "낮에는 치킨장사! 밤에는 잠복근무! 지금까지 이런 수사는 없었다!\n\n불철주야 달리고 구르지만 실적은 바닥, 급기야 해체 위기를 맞는 마약반! 더 이상 물러설 곳이 없는 팀의 맏형 고 반장(류승룡)은 국제 범죄조직의 국내 마약 밀반입 정황을 포착하고 장 형사(이하늬), 마 형사(진선규), 영호(이동휘), 재훈(공명)까지 4명의 팀원들과 함께 잠복 수사에 나선다. 마약반은 24시간 감시를 위해 범죄조직의 아지트 앞 치킨집을 인수해 위장 창업을 하게 되고, 뜻밖의 절대미각을 지닌 마 형사의 숨은 재능으로 치킨집은 일약 맛집으로 입소문이 나기 시작한다. 수사는 뒷전, 치킨장사로 눈코 뜰 새 없이 바빠진 마약반에 어느 날 절호의 기회가 찾아오는데…\n\n범인을 잡을 것인가, 닭을 잡을 것인가!",
         "image_default": "./source/image/mov/mov_ExtremeJob.png",
-        "image_poster": "./source/image/mov/mov_ExtremeJob.png",
+        "image_poster": "./source/image/mov/mov_ExtremeJob_P.png",
         "video": "https://youtu.be/BaIRaKXrLPk"
     },
     {
@@ -845,8 +845,8 @@
         "episodeGuide": [{"number": 1, "title": "맘마미아!"}],
         "rating": 12,
         "summary": "그리스의 작은 섬에서 엄마 도나(메릴 스트립)와 살고 있는 소피(아만다 시프리드)는 행복한 결혼을 앞둔 신부. 그러나 완벽한 결혼을 꿈꾸는 그녀의 계획에 흠이 있다면 결혼식에 입장할 손을 잡고 아빠가 없다는 것! 우연히 엄마의 일기장을 발견한 소피는 아빠로 추정되는 세 남자의 이름을 찾게 되고 엄마의 이름으로 그들을 초대한다. 결혼식 전날, 소피가 초대한 세 남자(샘,해리, 빌)가 그리스 섬에 도착하면서 도나는 당황하게 되는데... 과연 소피의 아빠는 누구일까? 그리고 이들의 결혼식은 무사히 끝날 수 있을까?",
-        "image_default": "./source/image/mu/mu_Mamma_mia!_B.png",
-        "image_poster": "./source/image/mu/mu_Mamma_mia!_P.png",
+        "image_default": "./source/image/mu/mu_Mamma_mia_B.png",
+        "image_poster": "./source/image/mu/mu_Mamma_mia_P.png",
         "video": "https://www.youtube.com/watch?v=FdgX6qOJVL4&list=RDFdgX6qOJVL4&start_radio=1"
     },
     {
@@ -1439,8 +1439,8 @@
         ],
         "rating": "ALL",
         "summary": "인기 연예인의 집 냉장고엔 뭐가 들었을까? 한국 최고의 셰프들이 연예인의 냉장고에서 꺼낸 다양한 재료들을 사용해 펼치는 즉흥요리 맛대결!",
-        "image_default": "./source/image/vod/show_12_nangb_01.png",
-        "image_poster": "./source/image/vod/show_12_nangb_P_01.png",
+        "image_default": "./source/image/show/show_12_nangb_B_01.png",
+        "image_poster": "./source/image/show/show_12_nangb_P_01.png",
         "video": "https://youtu.be/KIideRz9qEg?si=e7Csg8h6ugMzIKUc"
     },
     {
@@ -1459,8 +1459,8 @@
         ],
         "rating": "ALL",
         "summary": "스타들이 반려동물과 함께한 시간을 돌아보며, 코로나 팬데믹 속에서 더욱 깊어진 유대와 변화에 대해 진솔하게 대화를 나눈다.",
-        "image_default": "./source/image/show/show_2_Beuty AndThe_Beast_02.png",
-        "image_poster": "./source/image/show/show_2_Beuty AndThe_Beast_P_02.png",
+        "image_default": "./source/image/show/show_2_Beauty_Andthe_Beast_B_02.png",
+        "image_poster": "./source/image/show/show_2_Beauty_Andthe_Beast_P_02.png",
         "video": "https://youtu.be/X-gcr5_G9Bo?si=WVj5JlaDKpdqF6oL"
     },
     {
@@ -1485,7 +1485,7 @@
         ],
         "rating": 15,
         "summary": "마음에 상처가 있는 평범한 사람들. 이들에게 따뜻한 위로를 건네고 삶을 바꾸는 방법을 함께 고민하기 위한 쉼타, '오은영 스테이'가 문을 엽니다.",
-        "image_default": "./source/image/show/show_8_5=0Stay_03.png",
+        "image_default": "./source/image/show/show_8_5=0Stay_B_03.png",
         "image_poster": "./source/image/show/show_8_5=0Stay_P_03.png",
         "video": "https://youtu.be/0vrIPNu9Cnk?si=HncGd15LvbX-eFML"
     },
@@ -1515,7 +1515,7 @@
         ],
         "rating": 15,
         "summary": "차세대 트로트 킹은 누구? 트로트계의 남자 스타를 발굴하기 위한 프로젝트가 시작된다. 현직 가수부터 수학강사, 초등학생까지. 트로트에 살고 트로트에 죽는 100여팀의 참가자들. 1등이 되려면 연예인 심사 위원의 마음을 사로잡아라",
-        "image_default": "./source/image/show/show_12_MrTrote_04 .png",
+        "image_default": "./source/image/show/show_12_MrTrote_B_04.png",
         "image_poster": "./source/image/show/show_12_MrTrote_P_04.png",
         "video": "https://youtu.be/Ll7LWjTMp_o?si=TrQuTr39jcUVUJKB"
     },
@@ -1545,7 +1545,7 @@
         ],
         "rating": 15,
         "summary": "관계자 외 출입금지 구역에 들어가 문 너머의 세계를 엿본다. 세상에서 가장 베일에 싸인 그곳에서 어떤 일이 벌어지고 있는지 알아보는 시리즈.",
-        "image_default": "./source/image/show/show_10_Authorized_Personnel_Only_05.png",
+        "image_default": "./source/image/show/show_10_Authorized_Personnel_Only_B_05.png",
         "image_poster": "./source/image/show/show_10_Authorized_Personnel_Only_P_05.png",
         "video": "https://youtu.be/72_gFCfkCRU?si=qsqBz0DtFCF41Bgn"
     },
@@ -1571,8 +1571,8 @@
         ],
         "rating": 15,
         "summary": "기안84와 친구들이 함께 떠나는 즉흥 여행. 정해진 계획은 없다. 발길 닿는 대로 무작정 여행지를 돌아다니며 그곳의 진정한 아름다움을 발견한다.",
-        "image_default": "./source/image/show/show_8_Around the_world_since_I_was_born_06.png",
-        "image_poster": "./source/image/show/show_8_Around the_world_since_I_was_born_P_06.png",
+        "image_default": "./source/image/show/show_8_Around_the_world_since_I_was_born_B_06.png",
+        "image_poster": "./source/image/show/show_8_Around_the_world_since_I_was_born_P_06.png",
         "video": "https://youtu.be/fHQCvmb_aVU?si=XO0gwa7qyin302Wm"
     },
     {
@@ -1601,7 +1601,7 @@
         ],
         "rating": 15,
         "summary": "매력적인 싱글들이 무인도에 갇혀있다. 이곳을 탈출할 유일한 방법은 커플이 되는 것. 과연 누가 사랑과 함꼐 떠나고 누가 남게 될 것인가.",
-        "image_default": "./source/image/show/show_12_SoloHell_07.png",
+        "image_default": "./source/image/show/show_12_SoloHell_B_07.png",
         "image_poster": "./source/image/show/show_12_SoloHell_P_07.png",
         "video": "https://youtu.be/_A9_yjNRR0w?si=denkjWdjG7L5McLu"
     },
@@ -1625,8 +1625,8 @@
         ],
         "rating": 15,
         "summary": "부모님이 없는 곳에서도 아이들에겐 자기만의 일상이 있다. 종종 어른들은 모르는 아이들만의 비밀스러운 시간과 마음 속의 고민이 지금 공개된다.",
-        "image_default": "./source/image/show/show_6_My_Child's_Privacy_08.png",
-        "image_poster": "./source/image/show/show_6_My_Child's_Privacy_P_08.png",
+        "image_default": "./source/image/show/show_6_My_Childs_Privacy_B_08.png",
+        "image_poster": "./source/image/show/show_6_My_Childs_Privacy_P_08.png",
         "video": "https://youtu.be/YdV4hvzNIiQ"
     },
     {
@@ -1645,7 +1645,7 @@
         ],
         "rating": 15,
         "summary": "SM 엔터테인먼트의 과거와 현재, 미래를 상징하는 K팝 스타들이 서울 고척 스카이돔에서 자신들의 대표곡 무대를 선보인다",
-        "image_default": "./source/image/show/show_2_K-POP_TheBeginning_09.png",
+        "image_default": "./source/image/show/show_2_K-POP_TheBeginning_B_09.png",
         "image_poster": "./source/image/show/show_2_K-POP_TheBeginning_P_09.png",
         "video": "https://youtu.be/pG8Bj4xp_rk"
     },
@@ -1675,7 +1675,7 @@
         ],
         "rating": 15,
         "summary": "삐걱거리는 결혼생활을 이어온 부부들이 가상 이혼에 합의한다. 솔직하고도 감성적인 사회 실험 리얼리티 시리즈",
-        "image_default": "./source/image/show/show_12_A_Divorce_Decision_10.png",
+        "image_default": "./source/image/show/show_12_A_Divorce_Decision_B_10.png",
         "image_poster": "./source/image/show/show_12_A_Divorce_Decision_P_10.png",
         "video": "https://youtu.be/LJd7YQzoOCo?si=Qt_EUpGyAVBWr7aV"
     },
@@ -1705,7 +1705,7 @@
         ],
         "rating": 15,
         "summary": "명석한 경쟁자들의 두뇌 게임. 참가자들 가운데 두뇌를 풀가동하여 어마어마한 상금을 거머쥘 사람은 누구인가?",
-        "image_default": "./source/image/show/show_12_Devils_Plan_11.png",
+        "image_default": "./source/image/show/show_12_Devils_Plan_B_11.png",
         "image_poster": "./source/image/show/show_12_Devils_Plan_P_11.png",
         "video": "https://youtu.be/lRyKEjuw7qo"
     },
@@ -1731,7 +1731,7 @@
         ],
         "rating": 15,
         "summary": "아재 감성이 물씬 풍기는 출연진. 하지만 고등학생이라는 설정 하에 스타 전학생을 매주 맞이하여 순발력 넘치는 유머와 몸개그로 대결을 펼친다",
-        "image_default": "./source/image/show/show_8_Knowing_bros_12.png",
+        "image_default": "./source/image/show/show_8_Knowing_bros_B_12.png",
         "image_poster": "./source/image/show/show_8_Knowing_bros_P_12.png",
         "video": "https://youtu.be/IbTjm3HOSLY?si=1JBdLlAe-Q7dzL_H"
     },
@@ -1880,7 +1880,7 @@
         ],
         "rating": "ALL",
         "summary": "\"당차고 요망진 소녀와 무쇠처럼 우직하고 단단한 소년. 제주 바닷가 작은 마을에서 한 뼘씩 자라온 둘의 인생은 어디로 향할까. 넘어지고 좌절해도 다시 일어서며, 세월을 뛰어넘어 피어나는 사랑 이야기.",
-        "image_default": "./source/image/dra/dra_10_When_Life_Gives_You_Tangerines_02.png",
+        "image_default": "./source/image/dra/dra_10_When_Life_Gives_You_Tangerines_B_02.png",
         "image_poster": "./source/image/dra/dra_10_When_Life_Gives_You_Tangerines_P_02.png",
         "video": "https://youtu.be/hYqE_mlPeHc?si=VWy7xgpv95RbUWkT"
     },
@@ -2026,8 +2026,8 @@
         ],
         "rating": "ALL",
         "summary": "상류층 자녀들이 다니는 명문고에서 살인사건이 발생한다. 사건을 목격한, 넉넉지 않은 형편의 여학생. 입을 다무는 대가로 이 학교에 입학할 기회를 얻는데.",
-        "image_default": "./source/image/dra/dra_12_BITCHxRICH_07.png",
-        "image_poster": "./source/image/dra/dra_12_BITCHxRICH_P_07.png",
+        "image_default": "./source/image/dra/dra_10_BITCHxRICH_B_07.png",
+        "image_poster": "./source/image/dra/dra_10_BITCHxRICH_P_07.png",
         "video": "https://youtu.be/t7BIQ_OBh6c"
     },
     {
@@ -2054,14 +2054,14 @@
         ],
         "rating": "ALL",
         "summary": "노비의 삶을 벗어나기 위해 신분을 속여야 하는 젊은 여인. 그런데 한 떠돌이 이야기꾼이 여인을 향해 연정을 고백하면서 문제가 복잡해지기 시작한다.",
-        "image_default": "./source/image/dra/dra_12_The_Tale_of_Lady_Ok_08.png",
-        "image_poster": "./source/image/dra/dra_12_The_Tale_of_Lady_Ok_P_08.png",
+        "image_default": "./source/image/dra/dra_10_The_Tale_of_Lady_Ok_B_08.png",
+        "image_poster": "./source/image/dra/dra_10_The_Tale_of_Lady_Ok_P_08.png",
         "video": "https://youtu.be/2VhC3XppybA"
     },
     {
         "id": "dra-9",
         "category": "drama",
-        "title": "다시만난 세계",
+        "title": "다시 만난 세계",
         "director": "백수찬",
         "cast": ["여진구", "이연희", "안재현", "채연"],
         "production": "(주)아이엠티브이",
@@ -2082,8 +2082,8 @@
         ],
         "rating": "ALL",
         "summary": "12년 전 죽은 소년이 돌아왔다. 옛 교복 차림에, 변한 곳이라고는 없는 채로. 하지만 세상은 소년을 기다려주지 않았다. 훌쩍 커 버린 동생들과 서른한 살이 된 첫사랑까지. 기적처럼 다시 만난 세계. 하지만 그 의미는 무엇일까.",
-        "image_default": "./source/image/dra/dra_12_Into_the_New_World_09.png",
-        "image_poster": "./source/image/dra/dra_12_Into_the_New_World_P_09.png",
+        "image_default": "./source/image/dra/dra_10_Into_the_New_World_09_B.png",
+        "image_poster": "./source/image/dra/dra_10_Into_the_New_World_09_P.png",
         "video": "https://youtu.be/cf5HBozjZWs?si=FCwhUx7qYHgqiUU0"
     },
     {
@@ -2110,8 +2110,8 @@
         ],
         "rating": "ALL",
         "summary": "서울 도심에 수상한 호텔이 있다. 천년 영업에 숙박한 사람이 없다. 왜? 산 사람은 안 받으니까. 귀신만 묵는 그곳에 인간 지배인이 왔다. 알고 보면 심약한 이 남자, 고객 응대 잘 해낼까? 외모와 달리 괴팍한 사장은 어찌 감당할까.",
-        "image_default": "./source/image/dra/dra_12_Hotel_Del_Luna_10.png",
-        "image_poster": "./source/image/dra/dra_12_Hotel_Del_Luna_P_10.png",
+        "image_default": "./source/image/dra/dra_10_Hotel_Del_Luna_10_B.png",
+        "image_poster": "./source/image/dra/dra_10_Hotel_Del_Luna_10_P.png",
         "video": "https://youtu.be/wi6kzEHVqRk"
     },
     {
@@ -2138,8 +2138,8 @@
         ],
         "rating": "ALL",
         "summary": "초능력을 지닌 남매들이 아버지의 죽음을 계기로 다시 모인다. 소원했던 이들 앞에 가족의 충격적인 비밀이 드러나는데. 게다가 인류에 대한 위협이 서서히 다가오고 있음이 감지된다.",
-        "image_default": "./source/image/dra/dra_12_The_Umbrella_Academy_11.png",
-        "image_poster": "./source/image/dra/dra_12_The_Umbrella_Academy_P_11.png",
+        "image_default": "./source/image/dra/dra_10_The_Umbrella_Academy_11_B.png",
+        "image_poster": "./source/image/dra/dra_10_The_Umbrella_Academy_11_P.png",
         "video": "https://youtu.be/MD-ZeF8zyes"
     },
     {
@@ -2166,8 +2166,8 @@
         ],
         "rating": "ALL",
         "summary": "화려한 모습을 꿈꾸며 사교계에 데뷔하는 새로운 규수들. 그 사이, 그림자에 숨어 이중생활을 하는 한 소녀가 비밀과 반전 속에서 새롭게 빛을 찾아나간다.",
-        "image_default": "./source/image/dra/dra_12_Bridgerton_12.png",
-        "image_poster": "./source/image/dra/dra_12_Bridgerton_P_12.png",
+        "image_default": "./source/image/dra/dra_8_Bridgerton_12_B.png",
+        "image_poster": "./source/image/dra/dra_8_Bridgerton_12_P.png",
         "video": "https://youtu.be/bxOrlI3UNQI"
     },
     {
@@ -2192,8 +2192,8 @@
         ],
         "rating": "ALL",
         "summary": "똑똑함은 기본, 비꼬는 것에도 도가 튼 웬즈데이 아담스. 암울함을 풍기는 그녀가 네버모어 아카데미에서 얽히고설킨 미스터리를 파헤치기 시작한다. 새 친구도 사귀고, 앙숙도 만들며.",
-        "image_default": "./source/image/dra/dra_12_Wednesday_13.png",
-        "image_poster": "./source/image/dra/dra_12_Wednesday_P_13.png",
+        "image_default": "./source/image/dra/dra_8_Wednesday_13_B.png",
+        "image_poster": "./source/image/dra/dra_8_Wednesday_13_P.png",
         "video": "https://youtu.be/AIbUp3lXNq0"
     },
     {
@@ -2220,8 +2220,8 @@
         ],
         "rating": "ALL",
         "summary": "거대한 외계 물체가 지구에 착륙한다. 그 물체가 보내는 신호를 따라, 외계 생명체의 흔적을 좇아, 우주로 떠나는 니코와 대원들. 미지의 위험이 그들을 기다리고 있다.",
-        "image_default": "./source/image/dra/dra_12_Another_Life_14.png",
-        "image_poster": "./source/image/dra/dra_12_Another_Life_P_14.png",
+        "image_default": "./source/image/dra/dra_10_Another_Life_14_B.png",
+        "image_poster": "./source/image/dra/dra_10_Another_Life_14_P.png",
         "video": "https://youtu.be/5aIgt7d1pT4?si=ooM73cYWUfmBGh3x"
     },
     {
@@ -2248,8 +2248,8 @@
         ],
         "rating": "ALL",
         "summary": "너무나 똑똑하지만 그만큼 서투른 아홉 살 셸던 쿠퍼가 고등학교에 입성한다. 이곳에서 그의 뛰어난 지능은 모두를 당황하게 만드는데. 《빅뱅 이론》의 스핀오프 시리즈.",
-        "image_default": "./source/image/dra/dra_12_Young_Sheldon_15.png",
-        "image_poster": "./source/image/dra/dra_12_Young_Sheldon_P_15.png",
+        "image_default": "./source/image/dra/dra_10_Young_Sheldon_15_B.png",
+        "image_poster": "./source/image/dra/dra_10_Young_Sheldon_15_P.png",
         "video": "https://youtu.be/FStMMcj-RiA?si=3TZhTQ2KFL8i6R9T"
     },
     {
@@ -2273,8 +2273,8 @@
         ],
         "rating": "ALL",
         "summary": "말기 암 진단이 그를 범죄의 세계로 밀어 넣었다. 아니, 그런 줄 알았다. 제자와 함께 메스를 제조하기로 한 것은 순전히 가족을 지키려는 결정이었건만, 악과 타협한 그 순간, 그는 다가올 거대한 제국을 선택한 것이었다.",
-        "image_default": "./source/image/dra/dra_12_Breaking_Bad_16.png",
-        "image_poster": "./source/image/dra/dra_12_Breaking_Bad_P_16.png",
+        "image_default": "./source/image/dra/dra_7_Breaking_Bad_16_B.png",
+        "image_poster": "./source/image/dra/dra_7_Breaking_Bad_16_P.png",
         "video": "https://youtu.be/qzZIAWl3rDo?si=bTXpt8m8nif7aj_h"
     }
 ]

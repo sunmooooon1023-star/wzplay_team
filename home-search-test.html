@@ -1,0 +1,377 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/search.js" defer></script>
+</head>
+<style>
+    html,
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    body {
+        word-break: keep-all;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .main-layout-wrapper {
+        width: 100%;
+        background: #21252B;
+    }
+
+    .main-header-container {
+        width: 100%;
+        height: 80px;
+        background-color: #21252B;
+        /* background: linear-gradient(to bottom, #555, #fff 50%); */
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 60px;
+        color: #fff;
+        position: fixed;
+    }
+
+    .logo-box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo span {
+        font-family: 'SBAggroB';
+        font-size: 60px;
+        color: #D33A3C;
+        letter-spacing: -16px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 60px;
+    }
+
+    .nav-item a {
+        color: #fff;
+    }
+
+    .util-box {
+        display: flex;
+        gap: 70px;
+    }
+
+    .search-box {
+        position: relative;
+    }
+
+    .search-box label {
+        display: none;
+    }
+
+    .search-box .search-input {
+        width: 250px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px #999999 solid;
+        outline: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: 45px;
+        margin: 10px 0;
+        display: inline-block;
+    }
+
+    .search-box .search-btn {
+        border: none;
+        display: inline-block;
+        background: transparent url("../source/image/ico/ico_search.png") no-repeat center;
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        filter: invert(10);
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .account-box {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        align-items: center;
+        min-width: 130px;
+    }
+
+    .account-box .user-profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .account-hover-box {
+        width: 170px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid #999999;
+        opacity: 0;
+        pointer-events: none;
+        background: #21252B;
+        transition: .3s;
+    }
+
+    .account-box:hover .account-hover-box {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .account-hover-box .hover-box-upper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .account-hover-box .hover-box-upper img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .account-hover-box .hover-box-upper span {
+        font-size: 20px;
+    }
+
+    .hover-box-nav {
+        margin-top: 20px;
+        font-size: 13px;
+        opacity: 0.8;
+        padding: 0 20px;
+    }
+
+    .hover-box-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hover-box-nav ul li a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hover-box-nav ul li a::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        filter: invert(10);
+    }
+
+    .hover-box-nav ul li:first-child a::before {
+        background: url("../source/image/icons/ico_account.png");
+        background-size: 24px 24px;
+    }
+
+    .hover-box-nav ul li:nth-child(2) a::before {
+        background: url("../source/image/icons/ico_basket.png");
+        background-size: 24px 24px;
+    }
+
+    .hover-box-nav ul li:last-child a::before {
+        background: url("../source/image/icons/ico_favorite_list.png");
+        background-size: 24px 24px;
+    }
+
+    .logout {
+        margin-top: 20px;
+        text-align: center;
+        padding: 12px 0;
+        width: 100%;
+        border-top: 1px solid #999999;
+    }
+
+    .logout span {
+        cursor: pointer;
+    }
+
+
+    .main-footer-wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 400px;
+        background-color: #222;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-footer-container {
+        width: 1280px;
+        height: 100%;
+    }
+
+    .main-footer-container .social-nav {
+        margin-top: 40px;
+    }
+
+    .social-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    .social-nav li a {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        filter: invert(10);
+    }
+
+    .social-nav .ico_X {
+        background: url(../source/image/icons/ico_X.png) no-repeat center;
+        background-size: 25px 25px;
+    }
+
+    .social-nav .ico_facebook {
+        background: url(../source/image/icons/ico_facebook.png) no-repeat center;
+        background-size: 30px 30px;
+    }
+
+    .social-nav .ico_insta {
+        background: url(../source/image/icons/ico_insta.png) no-repeat center;
+        background-size: 30px 30px;
+    }
+
+    .social-nav .ico_youtube {
+        background: url(../source/image/icons/ico_youtube.png) no-repeat center;
+        background-size: 30px 30px;
+    }
+
+    .footer-nav {
+        margin-top: 20px;
+        display: flex;
+        width: 60%;
+        gap: 100px;
+    }
+
+    .footer-nav li {
+        width: 100px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+    .company-info {
+        margin-top: 40px;
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <div class="main-layout-wrapper">
+        <header id="mainHeader" class="main-header-container">
+            <div class="logo-box">
+                <h1 class="logo">
+                    <span>WZ</span>
+                </h1>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">카테고리</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">커뮤니티</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">스토어</a>
+                </li>
+            </ul>
+            <div class="util-box">
+                <form id="searchForm" action="/search.html" method="get" class="search-box">
+                    <label for="mainSearch">검색</label>
+                    <input id="mainSearch" class="search-input" name="query" type="text" placeholder="검색어를 입력하세요" />
+                    <button class="search-btn" type="submit"><span class="hidden">검색</span></button>
+                </form>
+                <div class="account-box">
+                    <span class="user-name">user</span>
+                    <span class="user-profile">
+                        <img src="./source/image/profile.png" alt="profile" />
+                    </span>
+                    <div class="account-hover-box">
+                        <div class="hover-box-upper">
+                            <img src="./source/image/profile.png" alt="profile" />
+                            <span>userName</span>
+                        </div>
+                        <div class="hover-box-nav">
+                            <ul>
+                                <li><a href="#">프로필관리</a></li>
+                                <li><a href="#">구매내역 관리</a></li>
+                                <li><a href="#">관심 콘텐츠 목록</a></li>
+                            </ul>
+                        </div>
+                        <div class="logout">
+                            <span>로그아웃</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </div>
+
+    <script>
+
+        document.getElementsByClassName('search-btn')[0].addEventListener('click', function (e) {
+            e.preventDefault();
+            const WORD = document.getElementById('mainSearch').value.trim();
+
+            if (WORD.length === 0) {
+                alert("검색어를 입력해주세요");
+                return;
+            }
+
+            window.location.href = `search.html?query=${encodeURIComponent(WORD)}`;
+        });
+
+    </script>
+</body>
