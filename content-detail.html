@@ -5,180 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content-Detail</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/content-detail.css">
     <script src="js/content-detail.js"></script>
 </head>
 <body>
     <div class="main-layout-wrapper">
-        <header id="main-header-container">
-        </header>
-        <!-- content-detail -->
-
-        <div class="content-detail-wrapper">
-            <div class="detail-main">
-                <div class="main-text">
-                    <h2>귀멸의 칼날</h2>
-                    <img src="source/image/content-detail/like02.png" alt="">
-                    <img src="source/image/content-detail/top01.png" alt="">
+         <header id="mainHeader" class="main-header-container">
+            <div class="logo-box">
+                <h1 class="logo">
+                    <a href="/home.html">
+                        <span>WZ</span>
+                    </a>
+                </h1>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/category.html">카테고리</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/community.html">커뮤니티</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/store.html">스토어</a>
+                </li>
+            </ul>
+            <div class="util-box">
+                <form id="searchForm" action="/search.html" method="get" class="search-box">
+                    <label for="mainSearch">검색</label>
+                    <input id="mainSearch" class="search-input" name="query" type="text" placeholder="검색어를 입력하세요"/>
+                    <button class="search-btn" type="submit"><span class="hidden">검색</span></button>
+                </form>
+                <div class="account-box">
+                    <span class="user-name">user</span>
+                    <span class="user-profile">
+                        <img src="./source/image/profile.png" alt="profile"/>
+                    </span>
+                    <div class="account-hover-box">
+                        <div class="hover-box-upper">
+                            <img src="./source/image/profile.png" alt="profile"/>
+                            <span>userName</span>
+                        </div>
+                        <div class="hover-box-nav">
+                            <ul>
+                                <li><a href="#">프로필관리</a></li>
+                                <li><a href="#">구매내역 관리</a></li>
+                                <li><a href="#">관심 콘텐츠 목록</a></li>
+                            </ul>
+                        </div>
+                        <div class="logout">
+                            <span>로그아웃</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <section class="work-info">
-                    <div class="info01">
-                        <div class="info01-title">
-                            <h3>줄거리</h3>
-                            <a href=""><img src="source/image/content-detail/share.png" alt=""></a>
-                        </div>
-                        <p>다가오는 혈귀와의 결전을 대비해 대원들과 함께 ‘주(柱)’들의 합동 강화 훈련인 「주 훈련」에 임하던 중, 귀살대 본부인 우부야시키 저택에 귀살대의 숙적 키부츠지 무잔이 나타난다. <br>우부야시키를 구하기 위해 달려온 주(柱)들과 탄지로였지만, 무잔의 손에 의해 정체불명의 공간으로 떨어지고 만다. <br>탄지로 일행이 떨어진 곳은 바로 혈귀의 본거지 ≪무한성≫― ‘귀살대’와 ‘혈귀’의 최종 결전의 막이 오른다!</p>
-                    </div>
-                    <div class="info02">
-                        <h3><span></span>작품정보</h3>
-                        <ul class="info02-text">
-                            <li>출연: 카마도 탄지로 (성우: 하나에 나츠키), 카마도 네즈코 (성우: 키토 아카리), 아가츠마 젠이츠(성우: 시모노 히로), 하시비라 이노스케 (성우: 마츠오카 요시츠구), 츠유리 카나오 (성우: 우에다 레이나), 시나즈가와 겐야(성우: 오카모토 노부히코), 무라타 (성우: 하마조에 신야), 큐브 스테이크 선배(성우: 반 타이토) </li>
-                            <li>장르: </li>
-                            <li>제작사: </li>
-                            <li>#tag #tag #tag </li>
-                        </ul>
-                        <div class="info02-ico">
+        </header>
 
-                        </div>
-                    </div>
+        <div class="content-detail-wrapper">
+            <div id="detail-main">
+            </div>
+            <div class="container">
+                <section id="work-info">
+
                 </section>
-                <section class="episode-list">
-                    <h3>전체회차</h3>
-                    <span>전체회차 n개</span>
-                    <div class="All-list">
-                        <div class="list">
-                            <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                             <img src="source/image/ani/ani_11_KimetsuNoYaiba.png" alt="">
-                            <ul class="list-title">
-                                <li>n회차: episode title</li>
-                                <li>
-                                    <ul class="list-icons">
-                                        <li></li>
-                                        <li></li>
-                                        <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <section id="episode-list">
+
                 </section>
 
 

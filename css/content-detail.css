@@ -8,15 +8,13 @@
 
 /* detail-main */
 
-.content-detail-wrapper>.detail-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(../source/image/ani/ani_11_KimetsuNoYaiba.png) no-repeat center/cover;
+.content-detail-wrapper>#detail-main {
     height: 800px;
     position: relative;
-    margin-bottom: 100px;
+    margin: 80px 0 100px;
 }
 
-.content-detail-wrapper>.detail-main>.main-text {
+.content-detail-wrapper>#detail-main>.main-text {
     position: absolute;
     display: flex;
     align-items: flex-end;
@@ -25,7 +23,7 @@
     gap: 15px;
 }
 
-.content-detail-wrapper>.detail-main>.main-text>h2 {
+.content-detail-wrapper>#detail-main>.main-text>h2 {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
@@ -33,37 +31,37 @@
     letter-spacing: 2px;
 }
 
-.content-detail-wrapper>.detail-main>.main-text>img {
+.content-detail-wrapper>#detail-main>.main-text>img {
     width: 32px;
     height: 32px;
 }
 
-.content-detail-wrapper>.detail-main>.main-text>img+img {
+.content-detail-wrapper>#detail-main>.main-text>img+img {
     width: 28px;
     height: 28px;
 }
 
 /* work-info */
 
-.content-detail-wrapper>.container>.work-info {
+.content-detail-wrapper>.container>#work-info {
     color: #fff;
     margin-bottom: 100px;
 }
 
 /* info01 */
-.content-detail-wrapper>.container>.work-info>.info01 {
+.content-detail-wrapper>.container>#work-info>.info01 {
     margin-bottom: 50px;
 }
 
-.content-detail-wrapper>.container>.work-info>.info01>.info01-title {
+.content-detail-wrapper>.container>#work-info>.info01>.info-title {
     display: flex;
     justify-content: space-between;
 }
-.content-detail-wrapper>.container>.work-info>.info01>.info01-title>a>img {
+.content-detail-wrapper>.container>#work-info>.info01>.info-title>a>img {
     width: 38px;
     height: 38px;
 }
-.content-detail-wrapper>.container>.work-info>.info01>.info01-title > h3 {
+.content-detail-wrapper>.container>#work-info>.info01>.info-title > h3 {
     font-size: 34px;
     font-weight: 500;
     margin-bottom: 30px;
@@ -71,14 +69,14 @@
 
 /* info02 */
 
-.content-detail-wrapper>.container>.work-info>.info02>h3 {
+.content-detail-wrapper>.container>#work-info>.info02>h3 {
     font-size: 34px;
     font-weight: 500;
     position: relative;
     padding-left: 40px;
     margin-bottom: 10px;
 }
-.content-detail-wrapper>.container>.work-info>.info02>h3> span::before {
+.content-detail-wrapper>.container>#work-info>.info02>h3> span::before {
     content: '19';
     background: red;
     color: #fff;
@@ -94,7 +92,7 @@
 
 /* episode-list */
 
-.content-detail-wrapper>.container>.episode-list>.All-list {
+.content-detail-wrapper>.container>#episode-list>.episodeAll>.All-list {
     max-width: 1200px;
     margin: 0 auto;
     height: 1000px;
@@ -110,7 +108,7 @@
 }
 
 
-.content-detail-wrapper > .container > .episode-list > .All-list {
+.content-detail-wrapper > .container > #episode-list>.episodeAll > .All-list {
   max-width: 1200px;
   margin: 0 auto;
   max-height: 800px;   
@@ -135,26 +133,26 @@
 }
 
 
-.content-detail-wrapper>.container>.episode-list {
+.content-detail-wrapper>.container>#episode-list>.episodeAll {
     color: #fff;
 }
-.content-detail-wrapper>.container>.episode-list >.All-list >.list >img {
+.content-detail-wrapper>.container>#episode-list>.episodeAll >.All-list >.list >img {
     width: 250px;
     height: 150px;
     border-radius: 10px;
     margin-bottom: 30px;
 }
-.content-detail-wrapper>.container>.episode-list >.All-list >.list  {
+.content-detail-wrapper>.container>#episode-list>.episodeAll >.All-list >.list  {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content-detail-wrapper>.container>.episode-list >.All-list >.list >.list-title {
+.content-detail-wrapper>.container>#episode-list>.episodeAll >.All-list >.list >.list-title {
     display: flex;
     justify-content: space-between;
     width: 850px;
 }
-.content-detail-wrapper>.container>.episode-list >.All-list >.list >.list-title > li >.list-icons >li>a> img {
+.content-detail-wrapper>.container>#episode-list>.episodeAll >.All-list >.list >.list-title > li >.list-icons >li>a> img {
     width: 32px;
     height: 32px;
     margin-right: 20px;

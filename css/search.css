@@ -109,14 +109,14 @@
     margin: 0 auto;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item {
     display: flex;
     gap: 40px;
     align-items: end;
     margin: 20px 0;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item {
     display: flex;
     gap: 40px;
     align-items: end;
@@ -124,68 +124,66 @@
     width: 300px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item>img {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item>img {
     width: 60px;
     height: 80px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item>img {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item>img {
     width: 60px;
     height: 80px;
     transition: all 0.3s;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item>a>p {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item>a>p {
     font-size: 18px;
     color: #fff;
     margin-bottom: 10px;
     transition: all 0.3s;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item>a>p>span {
     font-size: 32px;
     color: #ffffff80;
     margin-right: 40px;
     transition: all 0.3s;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item>a>p {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item>a>p {
     font-size: 18px;
     color: #fff;
     margin-bottom: 10px;
     transition: all 0.3s;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item>a>p>span {
     font-size: 32px;
     color: #ffffff80;
     margin-right: 40px;
     transition: all 0.3s;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item:hover>a>p {
-    color: #D33A3C;
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item:hover>a>p {
     font-size: 20px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-left>.popular-item:hover>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-left>.popular-item:hover>a>p>span {
     font-size: 36px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item:hover>a>p {
-    color: #D33A3C;
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item:hover>a>p {
     font-size: 20px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item:hover>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item:hover>a>p>span {
     font-size: 36px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item:hover:last-child>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item:hover:last-child>a>p>span {
     font-size: 32px;
 }
 
-.search-wrapper>.container>.search-popular>.popular-list02>.popular-list-right>.popular-item:last-child>a>p>span {
+.search-wrapper>.container>.search-popular>.popular-list02>#popular-list-right>.popular-item:last-child>a>p>span {
     margin-right: 30px;
     font-size: 28px;
 }
@@ -213,6 +211,7 @@
     width: 350px;
     height: 480px;
     margin-top: 80px;
+    padding: 10px 0;
 }
 
 
@@ -229,7 +228,7 @@
 .search-recommend>.swiper-bottom {
     width: 130%;
     height: 130px;
-    border-radius: 100%;
+    border-radius: 40%;
     position: absolute;
     bottom: 0px;
     left: -15%;

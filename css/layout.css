@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 
 @font-face {
@@ -7,10 +6,11 @@
     font-weight: normal;
     font-style: normal;
 }
-.main-layout-wrapper{
-    width: 100%;
-    background-color: #21252B;
+.main-layout-wrapper {
+    background: #21252B;
+    overflow-x: hidden;
 }
+
 
 .main-header-container{
     width: 100%;
@@ -24,6 +24,7 @@
     color: #fff;
     transition: .5s;
     transform: translateY(0);
+    z-index: 100;
 }
 .main-header-container.atHome.onTop{
     background: linear-gradient(to bottom, #555, transparent 50%);
@@ -85,7 +86,7 @@
 .search-box .search-btn{
     border: none;
     display: inline-block;
-    background: transparent url("../source/image/ico/ico_search.png") no-repeat center;
+    background: transparent url("../source/image/icons/ico_search.png") no-repeat center;
     width: 20px;
     height: 20px;
     background-size: 20px 20px;
@@ -169,15 +170,15 @@
     filter: invert(10);
 }
 .hover-box-nav ul li:first-child a::before{
-    background: url("../source/image/ico/ico_account.png");
+    background: url("../source/image/icons/ico_account.png");
     background-size: 24px 24px;
 }
 .hover-box-nav ul li:nth-child(2) a::before{
-    background: url("../source/image/ico/ico_basket.png");
+    background: url("../source/image/icons/ico_basket.png");
     background-size: 24px 24px;
 }
 .hover-box-nav ul li:last-child a::before{
-    background: url("../source/image/ico/ico_favorite_list.png");
+    background: url("../source/image/icons/ico_favorite_list.png");
     background-size: 24px 24px;
 }
 .logout{
