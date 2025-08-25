@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   const slideShow = Random.map(item =>
     `<div class="swiper-slide">
-        <a href=""><img src="${item.image_poster}"/></a>
+        <a href="content-detail.html?query=${item.id}"><img src="${item.image_poster}"/></a>
         </div>`).join('');
 
   document.getElementById('swiper-wrapper').innerHTML = slideShow;

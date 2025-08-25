@@ -1,8 +1,8 @@
 const fetchData = async () => {
-  const res = await fetch('./data.json');
-  const data = await res.json();
-  const dataArray = Object.values(data);  // 객체를 배열로 변환 (필요에 따라)
-  return dataArray;  // 데이터를 함수가 반환
+    const res = await fetch('./data.json');
+    const data = await res.json();
+    const dataArray = Object.values(data);
+    return dataArray;
 }
 
 /* render */
@@ -15,77 +15,180 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (!query) return;
 
     const data = await fetchData();
-            const DataAll = data.find(item => item.id.toLowerCase() === query);
+    const DataAll = data.find(item => item.id.toLowerCase() === query);
 
-            if (DataAll) {
-                const Main = document.getElementById('detail-main');
-                const Info1 = document.getElementById('work-info');
-                const Episode = document.getElementById('episode-list');
+    if (DataAll) {
+        const Main = document.getElementById('detail-main');
+        const Info1 = document.getElementById('work-info');
+        const Episode = document.getElementById('episode-list');
 
-                const MainDiv = document.createElement('div');
-                const InfoDive01 = document.createElement('div');
-                const InfoDiv02 = document.createElement('div');
-                const EpisodeDiv = document.createElement('div');
+        const MainDiv = document.createElement('div');
+        const InfoDive01 = document.createElement('div');
+        const InfoDiv02 = document.createElement('div');
+        const EpisodeDiv = document.createElement('div');
 
-                MainDiv.classList.add('main-text');
-                InfoDive01.classList.add('info01');
-                InfoDiv02.classList.add('info02');
-                EpisodeDiv.classList.add('episodeAll');
+        MainDiv.classList.add('main-text');
+        InfoDive01.classList.add('info01');
+        InfoDiv02.classList.add('info02');
+        EpisodeDiv.classList.add('episodeAll');
 
-                /* bg css */
-                Main.style.background = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${DataAll.image_default})`;
-                Main.style.backgroundRepeat = 'no-repeat';
-                Main.style.backgroundPosition = 'center';
-                Main.style.backgroundSize = 'cover';
+        /* bg css */
+        Main.style.background = `
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #21252B 99%),
+  url(${DataAll.image_default})`;
+        Main.style.backgroundRepeat = 'no-repeat';
+        Main.style.backgroundPosition = 'center';
+        Main.style.backgroundSize = 'cover';
 
-                MainDiv.innerHTML = `
+
+        MainDiv.innerHTML = `
                     <h2>${DataAll.title}</h2>
                     <img src="source/image/content-detail/like02.png" alt="">
                     <img src="source/image/content-detail/top01.png" alt="">`
-                InfoDive01.innerHTML = `
+        InfoDive01.innerHTML = `
                 <div class="info-title">
                 <h3>줄거리</h3>
                 <a href="#"><img src="source/image/content-detail/share.png" alt="share"></a>
                 </div>
                 <p>${DataAll.summary}</p>`;
 
-                InfoDiv02.innerHTML = `
-                        <h3><span></span>작품정보</h3>
+
+        /* 관람가 배경색 */
+        const rating = DataAll.rating;
+
+        let backgroundColor = "";
+        if (rating === 'ALL') {
+            backgroundColor = "#2196F3";
+        } else if (rating === '18+') {
+            backgroundColor = "#F44336";
+        } else if (rating === '15+') {
+            backgroundColor = "#FF9800";
+        } else {
+            backgroundColor = "#4CAF50";
+        }
+
+
+
+        InfoDiv02.innerHTML = `
+                        <h3><span style="background-color: ${backgroundColor};">${DataAll.rating}</span>작품정보</h3>
                         <ul class="info02-text">
-                            <li>출연: ${DataAll.cast}</li>
-                            <li>장르: ${DataAll.category}</li>
-                            <li>제작사: ${DataAll.production}</li>
-                            <li>${DataAll.tag} </li>
+                            <li><span>출연 :</span> ${DataAll.cast}</li>
+                            <li><span>장르 :</span> ${DataAll.category}</li>
+                            <li><span>감독 :</span> ${DataAll.director}</li>
+                            <li><span>제작사 :</span> ${DataAll.production}</li>
+                            <li>${DataAll.tag.map(tag => `#${tag.trim()}`).join(' ')}</li>
                         </ul>
                         <div class="info02-ico">
                         </div>`;
 
-                        EpisodeDiv.innerHTML = `
+        EpisodeDiv.innerHTML = `
                         <h3>전체회차</h3>
                         <span>전체회차 ${DataAll.episode}개</span>
-                        <div class="All-list">
-                            <div class="list">
-                                <img src="${DataAll.image_default}" alt="">
-                                <ul class="list-title">
-                                    <li>회차: episode title</li>
-                                    <li>
-                                        <ul class="list-icons">
-                                            <li></li>
-                                            <li></li>
-                                            <li><a href=""><img src="source/image/content-detail/share.png" alt=""></a></li>
-                                        </ul>
-                                    </li>
+                        <div class="All-list">    
+                        <div class="list">
+                        </div>           
+                        </div>`
+
+        const episodehtml = EpisodeDiv.querySelector('.list');
+        const episodeAll = document.getElementById('All-list');
+        episodehtml.innerHTML = '';
+        for (let i = 0; i < DataAll.episodeGuide.length; i++) {
+            const ep = DataAll.episodeGuide[i];
+            episodehtml.innerHTML += `
+                                    <div class="listN">
+                                        <img src="${DataAll.image_default}" alt="">
+                                            <div class="list-text">
+                                                <h4>${ep.number}회차: ${ep.title}</h4>
+                                                <div class="list-icons">
+                                                <i class="xi-star"><span>4.3</span></i> 
+                                                <span>50.8%</span>
+                                                <a href=""><img src="source/image/content-detail/share.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                    </div>`
+        }
+        Main.appendChild(MainDiv);
+        Info1.appendChild(InfoDive01);
+        Info1.appendChild(InfoDiv02);
+        Episode.appendChild(EpisodeDiv);
+
+    }
+    const ptitles = document.getElementsByClassName('review-text');
+
+    Array.from(ptitles).forEach(title => {
+        const p = title.getElementsByTagName('p')[0];
+        const span = document.createElement('span');
+        span.innerHTML = `${DataAll.title}`;
+        p.prepend(span);
+    });
+
+})
+
+
+/* 댓글 */
+
+/* 댓글 렌더링 */
+
+document.querySelectorAll('.review-text-icons .xi-heart').forEach(item => {
+    item.addEventListener('click', function () {
+        const Hspan = item.nextElementSibling;
+        const HNum = parseInt(Hspan.textContent);
+        Hspan.textContent = HNum + 1;
+    }, { once: true })
+})
+
+document.querySelectorAll('.review-text-icons .xi-emoticon-sad').forEach(item => {
+    item.addEventListener('click', function () {
+        const Sspan = item.nextElementSibling;
+        const SNum = parseInt(Sspan.textContent);
+        Sspan.textContent = SNum + 1;
+    }, { once: true })
+})
+
+
+document.getElementById('review-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    const reviewResult = document.getElementById('review-input');
+    const reviewText = reviewResult.value.trim();
+    if (reviewText === '') return;
+
+    const reviewList = document.getElementsByClassName('review-list')[0];
+
+    const reviewRender = document.createElement('div');
+    reviewRender.classList.add('list');
+
+    reviewRender.innerHTML = `<img src="source/image/profile.png" alt=""><span>user</span>
+                            <div class="review-text">
+                                <p>${reviewText}</p>
+                                <ul class="review-text-icons">
+                                    <li><i class="xi-heart"></i><span class="hNum">0</span></li>
+                                    <li><i class="xi-emoticon-sad"></i><span class="sNum">0</span></li>
                                 </ul>
-                            </div>
-                        </div>`;
+                            </div>`
+    reviewList.appendChild(reviewRender);
 
-                Main.appendChild(MainDiv);
-                Info1.appendChild(InfoDive01);
-                Info1.appendChild(InfoDiv02);
-                Episode.appendChild(EpisodeDiv);
+    reviewList.prepend(reviewRender);
 
-            }
-        })
+    reviewResult.value = '';
+
+    const Heart = reviewRender.querySelector('.xi-heart');
+    const Sad = reviewRender.querySelector('.xi-emoticon-sad');
+    const HNum = reviewRender.querySelector('.hNum');
+    const sNum = reviewRender.querySelector('.sNum');
 
 
+    Heart.addEventListener('click', function (e) {
+        e.preventDefault();
+        let heartNum = parseInt(HNum.textContent) || 0;
+        heartNum++;
+        HNum.textContent = heartNum;
+    }, { once: true })
+
+    Sad.addEventListener('click', function (e) {
+        e.preventDefault();
+        let sadNum = parseInt(sNum.textContent) || 0;
+        sadNum++;
+        sNum.textContent = sadNum;
+    }, { once: true })
+})
 
