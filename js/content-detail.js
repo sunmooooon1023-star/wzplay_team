@@ -89,19 +89,35 @@ document.addEventListener('DOMContentLoaded', async () => {
                         </div>           
                         </div>`
 
+        // 별점,% 랜덤
+        function randomstar(min, max) {
+            const random = Math.random() * (max - min) + min;
+            return random.toFixed(1);
+        }
+
+        function randompercent(min, max) {
+            const random = Math.random() * (max - min) + min;
+            return random.toFixed(1);  // 소수점 첫째자리까지 표시
+        }
+
+
         const episodehtml = EpisodeDiv.querySelector('.list');
-        const episodeAll = document.getElementById('All-list');
+
         episodehtml.innerHTML = '';
+
         for (let i = 0; i < DataAll.episodeGuide.length; i++) {
             const ep = DataAll.episodeGuide[i];
+            const starspan = randomstar(3.8, 5.0);
+            const percentspan = randompercent(45, 55);
+
             episodehtml.innerHTML += `
                                     <div class="listN">
                                         <img src="${DataAll.image_default}" alt="">
                                             <div class="list-text">
                                                 <h4>${ep.number}회차: ${ep.title}</h4>
                                                 <div class="list-icons">
-                                                <i class="xi-star"><span>4.3</span></i> 
-                                                <span>50.8%</span>
+                                                <i class="xi-star"><span>${starspan}</span></i> 
+                                                <span>${percentspan}</span>
                                                 <a href=""><img src="source/image/content-detail/share.png" alt=""></a>
                                                 </div>
                                             </div>
@@ -113,6 +129,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         Episode.appendChild(EpisodeDiv);
 
     }
+
+    /* 댓글 */
     const ptitles = document.getElementsByClassName('review-text');
 
     Array.from(ptitles).forEach(title => {
@@ -125,7 +143,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 })
 
 
-/* 댓글 */
+
 
 /* 댓글 렌더링 */
 
