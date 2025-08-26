@@ -171,9 +171,3 @@ document.addEventListener('DOMContentLoaded', async () => {
   result.scrollIntoView({ behavior: 'smooth' });
 
 });
-
-
-
-
-
-

@@ -998,8 +998,8 @@
         "episodeGuide": [{"number": 1, "title": "사랑은 비를 타고"}],
         "rating": "ALL",
         "summary": "아마추어 쇼 코미디언 돈은 공연을 하며 이곳저곳을 돌아다니지만 뜻대로 되지 않는다. 일자리를 찾아 할리우드로 향한 돈은 우연히 최고의 인기 배우가 출연하는 영화에 스턴트맨으로 참여할 기회를 얻는다.",
-        "image_default": "./source/image/mu/mu_Singin'_in_the_Rain_B.png",
-        "image_poster": "./source/image/mu/mu_Singin'_in_the_Rain_P.png",
+        "image_default": "./source/image/mu/mu_Singin_in_the_Rain_B.png",
+        "image_poster": "./source/image/mu/mu_Singin_in_the_Rain_P.png",
         "video": "https://www.youtube.com/watch?v=DPBKYwJo3nQ&t=25s"
     },
     {
@@ -1757,7 +1757,7 @@
         ],
         "rating": "15+",
         "summary": "바리바리 이야기보따리 싸 들고, 장도연과 나들이를 훌쩍 떠난다. 보고싶은 것, 먹고싶은 것, 마음맞는 사람만 있으면 언제든 오케이. 지금 바로 출발!",
-        "image_default": "./source/image/show/show_8_Jangdo_Baribari_13.png",
+        "image_default": "./source/image/show/show_8_Jangdo_Baribari_B_13.png",
         "image_poster": "./source/image/show/show_8_Jangdo_Baribari_P_13.png",
         "video": "https://youtu.be/cNEWCPMWkyY?si=gOCTGLRzeKMSYEoS"
     },
@@ -1780,7 +1780,7 @@
         ],
         "rating": "15+",
         "summary": "공 조심하세요! 배우 이승기, 코미디언 이경규, 야구선수 이승엽. 세 사람이 각자의 팀을 승리로 이끌기 위해 필드에 나선다.",
-        "image_default": "./source/image/show/show_5_play072_14.png",
+        "image_default": "./source/image/show/show_5_play072_B_14.png",
         "image_poster": "./source/image/show/show_5_play072_P_14.png",
         "video": "https://youtu.be/a-8nb_Mdbu8?si=BjtFPUaButDwfMYx"
     },
@@ -1802,7 +1802,7 @@
         ],
         "rating": "15+",
         "summary": "몸과 마음을 함께 치유해 주는 체험 마사지. 그런 마사지를 더욱 깊이 있게 알기 위해, 셀럽들이 다섯 나라를 여행하며 각국의 마사지 문화와 효력을 직접 경험한다.",
-        "image_default": "./source/image/show/show_4_Massage_Load_15.png",
+        "image_default": "./source/image/show/show_4_Massage_Load_B_15.png",
         "image_poster": "./source/image/show/show_4_Massage_Load_P_15.png",
         "video": "https://youtu.be/iiWtagcqnoI?si=wcE5pO78C5VQXQzw"
     },
@@ -1830,7 +1830,7 @@
         ],
         "rating": "15+",
         "summary": "확실하게 웃겨주는 식도락가들. 끝내주게 맛있는 먹거리들. 전국의 맛집이여 기다려라, 숟가락까지 삼킬 듯한 먹성의 코미디언들이 간다! 보기만 해도 침샘이 폭발하는 먹방 시리즈.",
-        "image_default": "./source/image/show/show_10_Tasty_Guys_16.png",
+        "image_default": "./source/image/show/show_10_Tasty_Guys_B_16.png",
         "image_poster": "./source/image/show/show_10_Tasty_Guys_P_16.png",
         "video": "https://youtu.be/tI0JSjELgVc?si=k9bCxA6zMW7A35BG"
     },
@@ -1852,7 +1852,7 @@
         ],
         "rating": "ALL",
         "summary": "국내 굴지의 로펌에 입사한 정의감 넘치는 신입 변호사. 냉정하고 까칠한 상사 밑에서 복잡한 법조계를 헤쳐 나간다.",
-        "image_default": "./source/image/dra/dra_12_Esquire_01.png",
+        "image_default": "./source/image/dra/dra_12_Esquire_B_01.png",
         "image_poster": "./source/image/dra/dra_12_Esquire_P_01.png",
         "video": "https://youtu.be/vW-BXPkTg7o?si=SnXysMHe4GjNjPMh"
     },
@@ -1910,7 +1910,7 @@
         ],
         "rating": "ALL",
         "summary": "1,000년을 거슬러 고려 시대로 시간 여행을 하게 된 21세기 여인. 궁중의 암투에 휘말리고 여러 황자들의 사랑을 한몸에 받게 된다.",
-        "image_default": "./source/image/dra/dra_12_Moon_Lovers_03.png",
+        "image_default": "./source/image/dra/dra_12_Moon_Lovers_B_03.png",
         "image_poster": "./source/image/dra/dra_12_Moon_Lovers_P_03.png",
         "video": "https://youtu.be/uJwVyV9BM5w?si=M7fJ7GPa2ddUpBmm"
     },
@@ -1940,7 +1940,7 @@
         ],
         "rating": "ALL",
         "summary": "1871년 신미양요 직후 미국으로 건너갔던 소년. 격변하는 역사 속에서 고국으로 돌아와, 사대부의 귀한 따님을 가슴에 품는다.",
-        "image_default": "./source/image/dra/dra_12_Mr_Sunshine_04.png",
+        "image_default": "./source/image/dra/dra_12_Mr_Sunshine_B_04.png",
         "image_poster": "./source/image/dra/dra_12_Mr_Sunshine_P_04.png",
         "video": "https://youtu.be/-sHaszIAyLE?si=Vw-9_3EB6FQPcYvb"
     },
@@ -1970,7 +1970,7 @@
         ],
         "rating": "ALL",
         "summary": "트리플 보드를 달성한 괴짜 천재 외과 의사. 서울의 유명 병원을 떠나 지방의 초라한 병원에서 젊은 의사들을 가르친다.",
-        "image_default": "./source/image/dra/dra_12_Dr_Romantic_05.png",
+        "image_default": "./source/image/dra/dra_12_Dr_Romantic_B_05.png",
         "image_poster": "./source/image/dra/dra_12_Dr_Romantic_P_05.png",
         "video": "https://youtu.be/l4V6VOFOBJ0"
     },
@@ -1998,7 +1998,7 @@
         ],
         "rating": "ALL",
         "summary": "조선의 왕세자가 살수의 습격으로 기억을 잃고 평민으로 전락한다. 문무를 겸비했으면 무얼 하나. 민가에선 그저 무용한 남정네일 뿐. 게다가 반전은 여기서 끝이 아니었으니. 고을 최고령 노처녀와 강제 혼인까지 해 버렸다!",
-        "image_default": "./source/image/dra/dra_12_Miserable_Heart_06.png",
+        "image_default": "./source/image/dra/dra_12_Miserable_Heart_B_06.png",
         "image_poster": "./source/image/dra/dra_12_Miserable_Heart_P_06.png",
         "video": "https://youtu.be/IFZfNGps9Fw"
     },

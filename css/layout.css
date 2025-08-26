@@ -6,10 +6,6 @@
     font-weight: normal;
     font-style: normal;
 }
-.main-layout-wrapper {
-    background: #21252B;
-    overflow-x: hidden;
-}
 
 
 .main-header-container{
@@ -221,19 +217,19 @@
     filter: invert(10);
 }
 .social-nav .ico_X{
-    background: url(../source/image/icons/ico_X.png) no-repeat center;
+    background: url(../source/image/ico/ico_X.png) no-repeat center;
     background-size: 25px 25px;
 }
 .social-nav .ico_facebook{
-    background: url(../source/image/icons/ico_facebook.png) no-repeat center;
+    background: url(../source/image/ico/ico_facebook.png) no-repeat center;
     background-size: 30px 30px;
 }
 .social-nav .ico_insta{
-    background: url(../source/image/icons/ico_insta.png) no-repeat center;
+    background: url(../source/image/ico/ico_insta.png) no-repeat center;
     background-size: 30px 30px;
 }
 .social-nav .ico_youtube{
-    background: url(../source/image/icons/ico_youtube.png) no-repeat center;
+    background: url(../source/image/ico/ico_youtube.png) no-repeat center;
     background-size: 30px 30px;
 }
 .footer-nav{

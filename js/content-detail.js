@@ -1,3 +1,17 @@
+
+/* header */
+document.querySelector("#searchForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const WORD = document.getElementById('mainSearch').value.trim();
+
+    if (WORD.length === 0) {
+        alert("검색어를 입력해주세요");
+        return;
+    }
+
+    window.location.href = `search.html?query=${encodeURIComponent(WORD)}`;
+});
+
 const fetchData = async () => {
     const res = await fetch('./data.json');
     const data = await res.json();
@@ -88,6 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="list">
                         </div>           
                         </div>`
+                        
 
         // 별점,% 랜덤
         function randomstar(min, max) {
@@ -209,4 +224,3 @@ document.getElementById('review-button').addEventListener('click', function (e) 
         sNum.textContent = sadNum;
     }, { once: true })
 })
-
