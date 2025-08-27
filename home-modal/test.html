@@ -8,26 +8,27 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/layout.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="stylesheet" href="../css/main-contents-Auto-progress.css">
-    <link rel="stylesheet" href="../css/main-grid-container.css">
-    <link rel="stylesheet" href="../css/container-community-store.css">
-    <link rel="stylesheet" href="../css/main-slider.css">
+    <link rel="stylesheet" href="./css/main-contents-Auto-progress.css">
+    <link rel="stylesheet" href="./css/main-grid-container.css">
+    <link rel="stylesheet" href="./css/container-community-store.css">
+    <link rel="stylesheet" href="./css/main-slider.css">
+    <link rel="stylesheet" href="./css/main-modal-inner-wrapper.css">
+    <link rel="stylesheet" href="./css/main-modal.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/layout.js" defer></script>
 
-    <script src="../js/list-menu.js" defer></script>
-    <script src="../js/main-contents-Autoplay-progress.js" defer></script>
-    <script src="../js/main-container-community-store.js" defer></script>
-    <script src="../js/h2-text.js" defer></script>
-    <script src="../js/main-grid-logo.js"></script>
-    <script src="../js/home-random-swiper.js" defer></script>
+    <script type="module" src="./js/home_init.js"></script>
+    <script type="module" src="./js/filter_menu_j.js"></script>
+    <script type="module" src="./js/home_swiper.js"></script>
+    <script type="module" src="./js/home_modal.js"></script>
+    <script type="module" src="./js/home_event.js"></script>
 </head>
 
 
@@ -102,63 +103,76 @@
     <div class="gradient"></div>
 
     <section id="container">
-        <div class="list">
+        <div class="list my-favorite">
             <h2>내가 관심있는 리스트</h2>
             <div class="swiper swiper_layout favorite_slider common">
                 <div class="swiper-wrapper" id="slide01">
-                    <!--스와이퍼 -->
-
+                    <!--스와이퍼 동적 렌더링 -->
                 </div>
-
+                <div class="home-hover-modal-wrapper" id="homeHoverModalWrapper"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+            
         </div>
 
-        <div class="list">
+        <div class="list recommend">
             <div class="list-menu">
                 <h2>이건 꼭 봐야해! 이번 분기 추천작</h2>
                 <ul class="list-gnb">
                     <li>
-                        <div class="list-contain">
-                            <span>유형</span>
+                        <div class="list-contain recommend">
+                            <span class="filter-condition-display">유형</span>
                             <div class="arrow-down"></div>
                         </div>
                         <ul class="sub">
-                            <!--  -->
+                            <li><span data-value="movie" class="category-btn">영화</span></li>
+                            <li><span data-value="drama" class="category-btn">드라마</span></li>
+                            <li><span data-value="documentary" class="category-btn">다큐</span></li>
+                            <li><span data-value="musical" class="category-btn">뮤지컬</span></li>
+                            <li><span data-value="varietyShow" class="category-btn">예능</span></li>
+                            <li><span data-value="animation" class="category-btn">애니</span></li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="swiper swiper_layout recommend_slider common">
                 <div class="swiper-wrapper" id="slide02">
-                    <!--스와이퍼 -->
+                    <!--스와이퍼 동적 렌더링-->
 
                 </div>
+                <div class="home-hover-modal-wrapper" id="homeHoverModalWrapper"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            
         </div>
 
-        <div class="list">
+        <div class="list trending">
             <div class="list-menu">
                 <h2>지금 제일 인기 있는 건 뭐지? 실시간 급상승 인기작!</h2>
                 <ul class="list-gnb">
                     <li>
-                        <div class="list-contain">
-                            <span>유형</span>
+                        <div class="list-contain trending">
+                            <span class="filter-condition-display">유형</span>
                             <div class="arrow-down"></div>
                         </div>
                         <ul class="sub">
+                            <li><span data-value="movie" class="category-btn">영화</span></li>
+                            <li><span data-value="drama" class="category-btn">드라마</span></li>
+                            <li><span data-value="documentary" class="category-btn">다큐</span></li>
+                            <li><span data-value="musical" class="category-btn">뮤지컬</span></li>
+                            <li><span data-value="varietyShow" class="category-btn">예능</span></li>
+                            <li><span data-value="animation" class="category-btn">애니</span></li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="swiper swiper_layout popular_slider common">
                 <div class="swiper-wrapper" id="slide03">
-                    <!--스와이퍼 -->
-
+                    <!--스와이퍼 동적 렌더링 -->
                 </div>
+                <div class="home-hover-modal-wrapper" id="homeHoverModalWrapper"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
@@ -169,147 +183,13 @@
             <!-- Autoplay progress Swiper -->
             <div class="swiper main-Autoplay-Swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide bg01">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>퀸카로 살아남는 법</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>가족들과 함께 아프리카에서 지내다 미국으로 전학 온 케이디는 새로운 학교에 적응하려 애쓴다. 그러던 중, 학교 내의 인기와 권력을 쥐고 있는 레지나는
-                                    케이디가 자신의 자리를 빼앗을 만한 경쟁자라 생각해 그녀에게 고의로 다가간다. 케이디의 다사다난한 고등학교 생활이 펼쳐진다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg02">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>데리 걸스</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>북아일랜드 데리에서 가톨릭 학교에 다니는 십대 소녀들의 유쾌하고 때로는 혼란스러운 일상을 그린 코미디 드라마. 1990년대 초 아일랜드의 정치적 혼란
-                                    속에서, 주인공 소녀들은 학교, 가족, 우정, 그리고 십대 소녀로서 겪는 성장통을 겪으며 성장하는 이야기가 시작된다!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg03">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>에스콰이어: 변호사를 꿈꾸는 변호사들</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>국내 굴지의 로펌에 입사한 정의감 넘치는 신입 변호사. 냉정하고 까칠한 상사 밑에서 복잡한 법조계를 헤쳐 나간다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg04">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>죽은 시인의 사회</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>명문대 진학만이 목표인 사립학교에 파격적인 선생님이 부임한다. 카르페 디엠! 현재를 즐겨라! 공부만을 앞세우던 학생들에겐 충격적인 수업. 그리고 서서히
-                                    삶의 관점이 달라지는 학생들. 하지만 규율만이 진리인 이곳에서 문제... 없을까.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg05">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>그대들은 어떻게 살 것인가</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>엄마가 돌아가신 뒤 엄마의 고향으로 이사한 소년 마히토. 그곳에서 만난 기묘한 왜가리에게 이끌려, 산 자와 죽은 자들이 공존하는 신비로운 이세계로 빨려
-                                    들어간다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg06">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>레지던트 이블 3: 인류의 멸망</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>라쿤 시티에 재앙이 발생한 이후 수년이 흘렀다. 적들이 한층 더 사악한 음모를 꾸미는 가운데, 앨리스는 라스베이거스에서 소수의 생존자와 힘을 합친다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg07">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>발리에서 생긴 일</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>발리에서 우연히 만난 네 명의 청춘 남녀. 각기 다른 인생의 위기에 직면한 그들이 복잡하게 꼬인 애정 관계에 휘말린다.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide bg08">
-                        <div class="swiper-slide-innerText">
-                            <div class="slide-overlay-text">
-                                <div class="sildeText">
-                                    <h3>23 아이덴티티</h3>
-                                    <ul class="inner-plus">
-                                        <li><a href="#">영상 맛보기
-                                                <div class="plus"></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p>23개의 인격이 언제 어떻게 나올지 모르는 케빈은 유일하게 자신을 이해해주는 플레처 박사에게만 자신의 이야기를 털어놓는다. 어느 날 24번째 인격이
-                                    그에게 등장하면서 케빈은 3명의 소녀들을 납치한다. 케빈의 수많은 인격은 아무도 모르게 그만의 계획을 은밀하게 진행하기 시작하는데..</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- 동적 렌더링 -->
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-
     </section>
 
     <section id="container-grid">
@@ -489,7 +369,9 @@
     </footer>
     </div>
 
-
+    <div class="home-click-modal-wrapper" id="homeClickModalWrapper">
+        <!--동적렌더링-->
+    </div>
 
     <!-- Swiper JS -->
 

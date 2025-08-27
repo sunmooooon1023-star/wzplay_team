@@ -135,27 +135,8 @@ body {
 .list .list-menu .list-gnb .sub li {
     padding: 10px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .list .list-menu .list-gnb .sub li:hover {
     background: #ffffff41;
-}
-
-
-/* swiper */
-.swiper.mainSlider >.swiper-wrapper .swiper-slide img {
-    display: block;
-    width: 350px;
-    height: 200px;
-    border-radius: 10px;
-}
-
-.swiper.mainSlider {
-    margin-top: 30px;
-    width: 100%;
-    overflow: visible;
-    
-}
-.swiper.mainSlider >.swiper-wrapper {
-    margin: 0;
-    overflow: visible;
 }
