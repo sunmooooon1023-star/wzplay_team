@@ -65,7 +65,7 @@ export const renderHomeSwiper = async (filterCondition, targetedSwiper, listCont
 export const initAutoplaySwiper = () => {
   const swiper = new Swiper(".main-Autoplay-Swiper", {
     effect: 'fade',
-    loof: true,
+    loop: true,
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -106,7 +106,7 @@ export const renderAutoplaySwiper = async () => {
     <div class="swiper-slide" style="background-image:url(${item.image_default}); background-size:cover;" id=${item.id}>
       <div class="swiper-slide-innerText">
         <div class="slide-overlay-text">
-          <div class="sildeText">
+          <div class="slideText">
             <h3>${item.title}</h3>
             <ul class="inner-plus">
               <li>

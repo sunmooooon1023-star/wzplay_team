@@ -6,6 +6,12 @@
     overflow: visible;
 }
 
+
+.swiper-slide {
+    left: -158px;
+}
+
+
 .swiper.swiper_layout .swiper-wrapper {
     margin-top: 40px;
 }
